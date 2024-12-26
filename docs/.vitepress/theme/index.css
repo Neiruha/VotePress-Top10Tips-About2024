@@ -1,0 +1,123 @@
+/* Боковое меню с розовым фоном */
+.vp-sidebar {
+  background: rgba(255, 247, 245, 0.8); /* Светло-розовый полупрозрачный фон */
+  border-right: 1px solid rgba(240, 230, 230, 0.8); /* Лёгкая линия разделения */
+  padding: 1rem;
+  font-family: var(--vp-font-family-base);
+}
+
+.vp-sidebar a {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 10px;
+  color: #333; /* Тёмный текст */
+  text-decoration: none;
+  border-radius: 8px; /* Округление углов */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.vp-sidebar a:hover {
+  background: var(--vp-c-brand-light); /* Светлый синий при наведении */
+  color: white; /* Белый текст */
+}
+
+.vp-sidebar a.active {
+  background: var(--vp-c-brand); /* Активный пункт */
+  color: white; /* Белый текст для активного */
+}
+
+/* Убираем лишние маркеры (если есть) */
+.vp-sidebar li {
+  list-style: none;
+}
+
+/* Минимальная настройка для общего баланса */
+body {
+  font-family: var(--vp-font-family-base);
+  margin: 0;
+  background: rgba(255, 247, 245, 1); /* Фон всей страницы в светло-розовом */
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555; /* Приятный нейтральный цвет */
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-left: 4px solid var(--vp-c-brand); /* Полоса слева для акцента */
+  background: rgba(255, 247, 245, 0.8); /* Лёгкий розовый фон для цитаты */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень для объёма */
+}
+
+blockquote strong {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--vp-c-brand); /* Основной брендовый цвет для имени */
+}
+
+
+.neiruha-comment {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 247, 245, 0.8); /* Розовый фон для комментария */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объёма */
+}
+
+.neiruha-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Круглый аватар */
+  margin-right: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+}
+
+.neiruha-comment p {
+  margin: 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: #333; /* Тёмный текст */
+}
+
+/* Убираем место под компонент поиска */
+.VPNavBarSearch {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.thumb {
+  max-width: 50%; /* Уменьшаем ширину до 50% контейнера */
+  margin: 1rem auto; /* Центруем изображение */
+  display: block; /* Блоковый элемент */
+}
+
+.tip-icon {
+  max-width: 70%; /* Уменьшаем ширину до 50% контейнера */
+  margin: 1rem auto; /* Центруем изображение */
+  display: block; /* Блоковый элемент */
+}
+
+
+.image-row {
+  display: flex; /* Делаем контейнер гибким */
+  gap: 1rem; /* Расстояние между изображениями */
+  justify-content: center; /* Центруем по горизонтали */
+}
+
+.image-row img {
+  max-width: 30%; /* Устанавливаем ширину для каждого изображения */
+  height: auto; /* Сохраняем пропорции */
+  border-radius: 8px; /* Красивая округлость */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+  transition: transform 0.3s ease; /* Анимация при наведении */
+}
+
+.image-row img:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}

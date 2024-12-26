@@ -1,0 +1,130 @@
+/* Стили для бокового меню (sidebar) */
+.vp-sidebar {
+  background: rgba(255, 255, 255, 0.8); /* Светлый полупрозрачный фон */
+  border-right: 1px solid #e4e7f0; /* Лёгкая линия разделения */
+  padding: 1rem;
+  font-family: var(--vp-font-family-base);
+}
+
+.vp-sidebar a {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 10px;
+  color: #333; /* Тёмный текст */
+  text-decoration: none;
+  border-radius: 8px; /* Округление углов */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.vp-sidebar a:hover {
+  background: var(--vp-c-brand-light); /* Светлый синий при наведении */
+  color: white; /* Белый текст */
+}
+
+.vp-sidebar a.active {
+  background: var(--vp-c-brand); /* Активный пункт */
+  color: white; /* Белый текст для активного */
+}
+
+/* Убираем лишние маркеры (если есть) */
+.vp-sidebar li {
+  list-style: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url('/images/space.svg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  color: #fefefe; /* Белый текст */
+  line-height: 1.6;
+}
+
+.vp-doc { 
+  background: transparent; /* Чтобы фон документа совпадал с основным */
+}
+
+/* Стили для навигационной панели */
+header.VPNav {
+  background: rgba(0, 0, 0, 0.85); /* Полупрозрачный чёрный фон */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Тонкая граница */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Лёгкая тень */
+}
+
+header.VPNav .VPNavBar a {
+  color: #fefefe; /* Белый цвет текста для ссылок */
+  text-decoration: none;
+}
+
+header.VPNav .VPNavBar a:hover {
+  color: #ffcc00; /* Золотой цвет при наведении */
+}
+
+/* Дополнительно: убираем белый фон у кнопки настроек */
+header.VPNav .VPNavBarSearch,
+header.VPNav .VPNavBarAppearance {
+  background: transparent;
+}
+
+/* Для мобильной версии (гамбургер-меню) */
+header.VPNav .VPNavBarHamburger {
+  background: rgba(255, 255, 255, 0.2); /* Лёгкий полупрозрачный фон */
+}
+
+.main {
+  background: rgba(0, 0, 0, 0.75); /* Чуть более прозрачный чёрный фон */
+  color: #fefefe; /* Белый текст */
+  padding: 2rem;
+  border-radius: 12px; /* Сделаем углы чуть более округлыми */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Лёгкая тень для "парения" */
+  max-width: 960px;
+  margin: 2rem auto;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Тонкая граница для элегантности */
+}
+
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555; /* Приятный нейтральный цвет */
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-left: 4px solid var(--vp-c-brand); /* Полоса слева для акцента */
+  background: rgba(240, 240, 240, 0.8); /* Лёгкий фон для цитаты */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень для объёма */
+}
+
+blockquote strong {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--vp-c-brand); /* Основной брендовый цвет для имени */
+}
+
+
+.neiruha-comment {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 245, 230, 0.8); /* Мягкий светлый фон */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объёма */
+}
+
+.neiruha-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Круглый аватар */
+  margin-right: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+}
+
+.neiruha-comment p {
+  margin: 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: #333; /* Тёмный текст */
+}
